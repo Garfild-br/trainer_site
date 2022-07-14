@@ -1,0 +1,240 @@
+/*--------icon---------------*/
+.container_1_icon {
+    display: flex;
+    z-index: 2;
+    left: 5%;
+    margin-bottom: 40px;
+    position: absolute;
+    transition: 1s ease-out;
+}
+
+.container_1_icon.for_cont2 {
+    transform: rotate(90deg) translateX(150px) translateY(15vh) scale(0);
+    ;
+    bottom: 0;
+    z-index: -100;
+}
+
+.container_1_icon_2 {
+    left: 0;
+    position: absolute;
+    transform: translateX(110%) translateY(-20vw) scale(0);
+    opacity: 0;
+    z-index: -100;
+    transition: 1s;
+    width: 2%;
+}
+
+.container_1_icon_2.for_cont3 {
+    transform: scale(0.7);
+    opacity: 1;
+    z-index: 1;
+    left: 5%;
+    transform: translateY(30vh);
+    transition: 2s;
+    margin: 0;
+    padding: 0;
+}
+
+.container_1_icon_2.for_cont3 div {
+    transform: scale(0.8);
+}
+
+.container_1_icon_2.for_cont4 {
+    transform: rotate(270deg) translateX(-50vw) translateY(40vh);
+    z-index: -1;
+    opacity: 0;
+    transition: 2s;
+}
+
+@media(max-width: 700px) {
+    .container_1_icon_2.for_cont4 {
+        transform: translateY(60vh);
+    }
+}
+
+.container_1_icon_2.for_cont4 div {
+    transform: rotate(90deg) scale(0.1);
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+}
+
+.container_1_icon_3 {
+    position: absolute;
+    transform: translateY(-20vw) scale(0);
+    opacity: 0;
+    transition: 2s;
+}
+
+@media(max-width: 700px) {
+    .container_1_icon_3 {
+        opacity: 0;
+        transform: translateY(-50vw) scale(0);
+    }
+}
+
+.container_1_icon_3.for_cont5 {
+    transform: translateX(60vw) scale(1.3) rotate(-90deg);
+    opacity: 1;
+    margin-top: -15vh;
+}
+
+.container_1_icon_3.for_cont5 div {
+    transform: rotate(90deg);
+    margin: 20px;
+    z-index: 90;
+}
+
+@media(max-width: 700px) {
+    .container_1_icon_3.for_cont5 {
+        display: flex;
+        margin: 0;
+    }
+
+    .container_1_icon_3.for_cont5 div {
+        margin: 0;
+        transform: scale(0.7) rotate(90deg) translateX(-5vw);
+    }
+}
+
+.container_1_icon_3.for_cont5.for_cont6 {
+    transform: translate(20vh, 20vw) rotate(-180deg);
+    opacity: 0;
+    transition: 1s;
+}
+
+.container_1_icon_4 {
+    position: absolute;
+    left: 20%;
+    margin-top: -60vh;
+    transform: scale(0) rotate(90deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+.container_1_icon_4 div {}
+
+.container_1_icon_4.for_cont7 {
+    transform: scale(1);
+    opacity: 1;
+    left: 5%;
+    margin-top: -20vh;
+}
+
+@media (max-width: 700px) {
+    .container_1_icon_4.for_cont7 {
+        transform: translateY(90vh);
+
+    }
+
+    .container_1_icon_4.for_cont7 div {
+        transform: scale(1.2);
+        margin: 15px;
+    }
+}
+
+.container_1_icon_4.for_cont8 {
+    z-index: -100;
+    margin: 0;
+    left: 30%;
+    transform: rotate(-90deg);
+}
+
+.container_1_icon_4.for_cont8 div {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+}
+
+@media (max-width: 700px) {
+    .container_1_icon_4.for_cont7.for_cont8 {
+        transform: translateY(150vh) rotate(-90deg) scale(0);
+        opacity: 0;
+    }
+}
+.container_1_icon_5__2_phone {
+    position: absolute;
+        width: 15%;
+        height: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 10vh;
+}
+@media (max-width: 500px){
+    .container_1_icon_5__2_phone {
+        width: 45%;
+        margin-top: 110px;
+    }
+}
+.what_icon_phone,
+.vk_icon_phone,
+.telega_icon_phone,
+.inst_icon_phone {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 700px) {
+
+    .what_icon_phone,
+    .vk_icon_phone,
+    .telega_icon_phone,
+    .inst_icon_phone {
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .what_icon_phone img,
+    .vk_icon_phone img,
+    .telega_icon_phone img,
+    .inst_icon_phone img {
+
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    .what_icon_phone,
+    .vk_icon_phone,
+    .telega_icon_phone,
+    .inst_icon_phone {
+        width: 80px;
+        height: 80px;
+
+    }
+}
+
+.what_icon_phone img,
+.vk_icon_phone img,
+.telega_icon_phone img,
+.inst_icon_phone img {
+    width: 100%;
+    padding: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.5s;
+
+}
+
+.what_icon_phone img:hover,
+.vk_icon_phone img:hover,
+.telega_icon_phone img:hover,
+.inst_icon_phone img:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+
+    .what_icon_phone img,
+    .vk_icon_phone img,
+    .telega_icon_phone img,
+    .inst_icon_phone img {
+        padding: 10px;
+    }
+}

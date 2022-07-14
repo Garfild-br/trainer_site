@@ -1,0 +1,207 @@
+.container_4_modal_window_1,
+.container_4_modal_window_2,
+.container_4_modal_window_3 {
+    position: fixed;
+    left: 5%;
+    bottom: 10%;
+    height: 80vh;
+    width: 90%;
+    z-index: 20;
+    background: #ef2ec8;
+     padding: 20px;
+     border-radius: 10px;
+     border: 2px solid rgb(255, 255, 255, 0.1);
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+    box-shadow: inset 0px 50px 80px 50px rgba(0, 0, 0, 0.5);
+     transition: 1s ease;
+     transform: translateX(-200%);
+}
+.container_4_modal_window_1.active,
+.container_4_modal_window_2.active,
+.container_4_modal_window_3.active {
+    transform: translateX(0);
+}
+
+/*-------------картинки 1 окна---------------*/
+
+.modal_img_1 {
+    width: 90%;
+    display: flex;
+}
+.img_online_1 {
+    width: 50%;
+    margin: 15px; 
+}
+@media (max-width: 700px) {
+    .img_online_1 {
+        width: 100%;
+
+}}
+.img_online_1 img{
+    width: 100%;
+    border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255, 0.1);
+        filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+}
+
+
+/*-------------картинки 2 окна---------------*/
+
+.modal_img_2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.img_gym_1 {
+    width: 80%;
+        margin: 15px;
+}
+@media (max-width: 1000px) {
+    .modal_img_2 {
+        width: 80%;
+    }
+}
+@media (max-width: 700px) {
+    .img_gym_1 {
+            width: 80%;
+}}
+@media (max-width: 500px) {
+    .modal_img_2 {
+        width: 140%;
+    }
+}
+.img_gym_1 img{
+        width: 70%;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 255, 255, 0.1);
+            filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+}
+
+/*-------------картинки 3 окна---------------*/
+
+.modal_img_3 {
+    width: 80%;
+        display: flex;
+}
+.img_street{
+    width: 40%;
+    margin: 15px;
+}
+@media (max-width: 700px) {
+    .img_street{
+        width: 60%;
+    }
+}
+.img_street img{
+    width: 100%;
+    border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255, 0.1);
+        filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+}
+/*---------текст модалки-----------*/
+.modal_text {
+    padding: 20px;
+    font-size: calc(var(--sizeindex) * 1);
+    
+}
+.modal_text_1 {
+    position: absolute;
+    width: 40%;
+    right: 7%;
+    top: 7%;
+    font-size: calc(var(--sizeindex) * 1);
+}
+@media (max-width: 700px) {
+    .modal_text_1 {
+        top: 60%;
+        width: 80%;
+        left: 7%;
+    }
+}
+@media (max-width: 500px) {
+    .modal_text_1 {
+        top: 40%;
+        width: 80%;
+        left: 7%;
+    }
+}
+.modal_text_2{
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 10%;
+    font-size: calc(var(--sizeindex) * 1);
+}
+
+@media (max-width: 700px){
+    .modal_text_2 {
+        width: 40%;
+            left: 55%;
+            top: 10%;
+}}
+@media (max-width: 500px) {
+    .modal_text_2 {
+        top: 65%;
+        width: 80%;
+        left: 7%;
+    }
+}
+
+.modal_text_3{
+    position: absolute;
+    width: 60%;
+    right: 3%;
+    top: 3%;
+    padding: 20px;
+    font-size: calc(var(--sizeindex) * 1);
+}
+@media (max-width: 700px) {
+    .modal_text_3 {
+        top: 5%;
+        width: 45%;
+}}
+@media (max-width: 500px) {
+    .modal_text_3 {
+        top: 45%;
+        width: 95%;
+    }
+}
+.modal_button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: center;
+    float: right;
+    transition: 0.5s;
+    border-radius: 15px;
+    border: 1px solid #fff;
+     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+}
+.modal_button a{
+    display: block;
+    padding: 10px 40px 10px 40px;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+}
+.modal_button:hover {
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.8));
+    transform: scale(1.02)
+}
+.modal_close_1,
+.modal_close_2,
+.modal_close_3{
+    width: 30px;
+    height: 20px;
+    font-size: 30px;
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.modal_close_1:hover,
+.modal_close_2:hover,
+.modal_close_3:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
+}
